@@ -340,8 +340,8 @@ Respond with either "a" or "b" only.  No extra words.
 
 
 #
-##df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/bias/LLM_bias.csv')
-##df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/political_leaning/LLM_political_leaning.csv')
+##df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/bias/LLM_bias.csv')
+##df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/political_leaning/LLM_political_leaning.csv')
 ##
 ##
 ##for tem in [1]:
@@ -377,7 +377,7 @@ Respond with either "a" or "b" only.  No extra words.
 ##                ##       
 ##                d=pd.DataFrame({'prompt':t,'response':lis})
 ##                ##        
-##                #d.to_csv('C:/Users/naa9497/Downloads/self_reflection/safety/cross_reflect/gpt/safe/gemini_{}_temp_{}_exp_{}.csv'.format(w,tem,n))
+##                #d.to_csv('C:/Users/user_name/Downloads/self_reflection/safety/cross_reflect/gpt/safe/gemini_{}_temp_{}_exp_{}.csv'.format(w,tem,n))
 ##                ##        
 ##                print(d.response.value_counts())
 ##
@@ -442,7 +442,7 @@ Respond with either "a" or "b" only.  No extra words.
 ##                       
 ##                    d=pd.DataFrame({'prompt':t,'response':lis})
 ##
-####                    d.to_csv('C:/Users/naa9497/Downloads/self_reflection/political_leaning/gemini_political/self_reflect/{}/gemini_{}_temp_{}_exp_{}.csv'.format(ty,w,tem,n))
+####                    d.to_csv('C:/Users/user_name/Downloads/self_reflection/political_leaning/gemini_political/self_reflect/{}/gemini_{}_temp_{}_exp_{}.csv'.format(ty,w,tem,n))
 ##
 ##                    print(d.response.value_counts())
 ##
@@ -459,19 +459,19 @@ Respond with either "a" or "b" only.  No extra words.
 ##t='safe2'
 ##
 ##print('*********************')
-##df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/safety/safe_responses/{}/self_reflect/{}_{}_temp_0_exp_1.csv'.format(model,model,t))
+##df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/safety/safe_responses/{}/self_reflect/{}_{}_temp_0_exp_1.csv'.format(model,model,t))
 ##
 ##print(df.response.value_counts())
 ##x1=100*df[~((df.response=='a')|(df.response=='a.')|(df.response.str.contains('unsafe'))|(df.response.str.contains('Sorry')))].shape[0]/df.shape[0]
 ##print('*********************')
 ##
-##df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/safety/safe_responses/{}/self_reflect/{}_{}_temp_0_exp_2.csv'.format(model,model,t))
+##df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/safety/safe_responses/{}/self_reflect/{}_{}_temp_0_exp_2.csv'.format(model,model,t))
 ##
 ##print(df.response.value_counts())
 ##x2=100*df[~((df.response=='a')|(df.response=='a.')|(df.response.str.contains('unsafe'))|(df.response.str.contains('Sorry')))].shape[0]/df.shape[0]
 ##print('*********************')
 ##
-##df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/safety/safe_responses/{}/self_reflect/{}_{}_temp_0_exp_3.csv'.format(model,model,t))
+##df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/safety/safe_responses/{}/self_reflect/{}_{}_temp_0_exp_3.csv'.format(model,model,t))
 ##
 ##print(df.response.value_counts())
 ##x3=100*df[~((df.response=='a')|(df.response=='a.')|(df.response.str.contains('unsafe'))|(df.response.str.contains('Sorry')))].shape[0]/df.shape[0]
@@ -502,15 +502,15 @@ Respond with either "a" or "b" only.  No extra words.
 ##t='prob'
 ##
 ##print('*********************')
-##df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/bias/{}_unbias/{}_{}_temp_{}_exp_1.csv'.format(model,model,t,m))
+##df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/bias/{}_unbias/{}_{}_temp_{}_exp_1.csv'.format(model,model,t,m))
 ##print(df.response.value_counts())
 ##x1=100*df[~((df.response=='a')|(df.response=='a.')|(df.response.str.contains('Sorry')))].shape[0]/df.shape[0]
 ##print('*********************')
-##df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/bias/{}_unbias/{}_{}_temp_{}_exp_2.csv'.format(model,model,t,m))
+##df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/bias/{}_unbias/{}_{}_temp_{}_exp_2.csv'.format(model,model,t,m))
 ##print(df.response.value_counts())
 ##x2=100*df[~((df.response=='a')|(df.response=='a.')|(df.response.str.contains('Sorry')))].shape[0]/df.shape[0]
 ##print('*********************')
-##df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/bias/{}_unbias/{}_{}_temp_{}_exp_3.csv'.format(model,model,t,m))
+##df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/bias/{}_unbias/{}_{}_temp_{}_exp_3.csv'.format(model,model,t,m))
 ##print(df.response.value_counts())
 ##x3=100*df[~((df.response=='a')|(df.response=='a.')|(df.response.str.contains('Sorry')))].shape[0]/df.shape[0]
 ##print('*********************')
@@ -544,17 +544,17 @@ t='prob'
 
 
 print('*********************')
-df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/political_leaning/{}_political/self_reflect/{}/{}_{}_temp_{}_exp_1.csv'.format(model,s,model,t,m))
+df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/political_leaning/{}_political/self_reflect/{}/{}_{}_temp_{}_exp_1.csv'.format(model,s,model,t,m))
 print(df.response.value_counts())
 x1=100*df[~((df.response=='a')|(df.response=='a.')|(df.response.str.contains('Sorry')))].shape[0]/df.shape[0]
 print('*********************')
 
-df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/political_leaning/{}_political/self_reflect/{}/{}_{}_temp_{}_exp_2.csv'.format(model,s,model,t,m))
+df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/political_leaning/{}_political/self_reflect/{}/{}_{}_temp_{}_exp_2.csv'.format(model,s,model,t,m))
 print(df.response.value_counts())
 x2=100*df[~((df.response=='a')|(df.response=='a.')|(df.response.str.contains('Sorry')))].shape[0]/df.shape[0]
 print('*********************')
 
-df=pd.read_csv('C:/Users/naa9497/Downloads/self_reflection/political_leaning/{}_political/self_reflect/{}/{}_{}_temp_{}_exp_3.csv'.format(model,s,model,t,m))
+df=pd.read_csv('C:/Users/user_name/Downloads/self_reflection/political_leaning/{}_political/self_reflect/{}/{}_{}_temp_{}_exp_3.csv'.format(model,s,model,t,m))
 print(df.response.value_counts())
 x3=100*df[~((df.response=='a')|(df.response=='a.')|(df.response.str.contains('Sorry')))].shape[0]/df.shape[0]
 print('*********************')
